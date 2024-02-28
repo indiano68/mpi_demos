@@ -13,7 +13,7 @@ all: $(TARGETS)
 
 # Rule to compile each source file into corresponding target
 $(BUILD_DIR)/%: $(SRC_DIR)/%.c | $(BUILD_DIR)
-	$(CC) -o $@ $<
+	$(CC) -O3 -o $@ $<
 
 # Rule to create the build directory if it doesn't exist
 $(BUILD_DIR):
